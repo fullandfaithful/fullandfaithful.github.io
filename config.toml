@@ -1,0 +1,38 @@
+baseURL = "https://www.example.com/"
+title = "Full and Faithful"
+theme ="hugo-theme-basic"
+languageCode = "en-us"
+googleAnalytics = "UA-XXXXXXXXX-X"
+enableEmoji = true
+copyright = ""
+description = "Personal site of Abraham Aguilar"
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[Permalinks]
+  post = "post/:slug"
+
+[[params.menu]]
+  name = "blog"
+  url = "posts/"
+
+[[params.menu]]
+  name = "post series"
+  url = "series/"
+
+[[params.menu]]
+  name = "about"
+  url = "about/"
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    respectDoNotTrack = true
+    useSessionStorage = true
+  [privacy.twitter]
+    enableDNT = true
+  [privacy.youtube]
+    privacyEnhanced = true
