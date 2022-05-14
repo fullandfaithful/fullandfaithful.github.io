@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>category1 on Full and Faithful</title>
+    <link>https://www.example.com/categories/category1/</link>
+    <description>Recent content in category1 on Full and Faithful</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.example.com/categories/category1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My first post</title>
+      <link>https://www.example.com/posts/my-first-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.example.com/posts/my-first-post/</guid>
+      <description>This is my post body This is my post body this is my post body and more body and more body and so much more body that it is frankly incredible that i have this much body and that&amp;rsquo;s in more thatn one respect for instance i must weigh about ten thousand pounds which makes me have so much body you don&amp;rsquo;t even know how much. ok? that&amp;rsquo;s it now why doesn&amp;rsquo;t this thing update</description>
+    </item>
+    
+    <item>
+      <title>My first post</title>
+      <link>https://www.example.com/posts/well-formed-scales/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.example.com/posts/well-formed-scales/</guid>
+      <description>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</description>
+    </item>
+    
+  </channel>
+</rss>
