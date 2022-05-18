@@ -1,4 +1,4 @@
-baseURL = "https://www.example.com/"
+baseURL = "https://fullandfaithful.com/"
 title = "Full and Faithful"
 theme ="hugo-theme-basic"
 languageCode = "en-us"
@@ -6,6 +6,7 @@ googleAnalytics = "UA-XXXXXXXXX-X"
 enableEmoji = true
 copyright = ""
 description = "Personal site of Abraham Aguilar"
+mathjax = true
 
 [taxonomies]
   category = "categories"
