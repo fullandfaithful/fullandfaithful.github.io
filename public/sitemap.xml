@@ -2,27 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.example.com/about/</loc>
+    <loc>https://fullandfaithful.com/posts/well-formed-scales/</loc>
+    <lastmod>2022-05-14T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://fullandfaithful.com/series/escalas-bien-formadas/</loc>
+    <lastmod>2022-05-14T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://fullandfaithful.com/</loc>
+    <lastmod>2022-05-14T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://fullandfaithful.com/tags/m%C3%BAsica/</loc>
+    <lastmod>2022-05-14T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://fullandfaithful.com/posts/</loc>
+    <lastmod>2022-05-14T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://fullandfaithful.com/series/</loc>
+    <lastmod>2022-05-14T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://fullandfaithful.com/tags/</loc>
+    <lastmod>2022-05-14T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://fullandfaithful.com/about/</loc>
     <priority>0</priority>
   </url><url>
-    <loc>https://www.example.com/categories/</loc>
-  </url><url>
-    <loc>https://www.example.com/categories/category1/</loc>
-  </url><url>
-    <loc>https://www.example.com/</loc>
-  </url><url>
-    <loc>https://www.example.com/posts/my-first-post/</loc>
-  </url><url>
-    <loc>https://www.example.com/posts/well-formed-scales/</loc>
-  </url><url>
-    <loc>https://www.example.com/posts/</loc>
-  </url><url>
-    <loc>https://www.example.com/series/</loc>
-  </url><url>
-    <loc>https://www.example.com/series/series1/</loc>
-  </url><url>
-    <loc>https://www.example.com/tags/tag1/</loc>
-  </url><url>
-    <loc>https://www.example.com/tags/</loc>
+    <loc>https://fullandfaithful.com/categories/</loc>
   </url>
 </urlset>

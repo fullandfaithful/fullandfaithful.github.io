@@ -2,16 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on Full and Faithful</title>
-    <link>https://www.example.com/series/</link>
+    <link>https://fullandfaithful.com/series/</link>
     <description>Recent content in Series on Full and Faithful</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://www.example.com/series/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 May 2022 00:00:00 -0500</lastBuildDate><atom:link href="https://fullandfaithful.com/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>series1</title>
-      <link>https://www.example.com/series/series1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Escalas bien formadas</title>
+      <link>https://fullandfaithful.com/series/escalas-bien-formadas/</link>
+      <pubDate>Sat, 14 May 2022 00:00:00 -0500</pubDate>
       
-      <guid>https://www.example.com/series/series1/</guid>
+      <guid>https://fullandfaithful.com/series/escalas-bien-formadas/</guid>
       <description></description>
     </item>
     
