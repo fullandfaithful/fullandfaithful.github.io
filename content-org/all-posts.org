@@ -2,7 +2,7 @@
 #+hugo_base_dir: ../
 
 * DONE Afinación pitagórica :música:
-SCHEDULED: <2022-05-14 Sat>
+SCHEDULED: <2022-05-14 Sat  >
 :PROPERTIES:
 :EXPORT_FILE_NAME: well-formed-scales
 :export_hugo_custom_front_matter: :series "Escalas bien formadas"
@@ -193,27 +193,27 @@ para $B = 7$ el convergente es de hecho el semiconvergente $[0,1,1,2,1]= \frac{4
 
 Ahora calculamos la tabla para $9$ EDO (equal divisions of octave, es decir, divisiones iguales de la octava) $\mu = 2^{5/9}$. La expansión de $log_2(2^{5/9})$ es $[1,1,4]$ y la secuencia de (semi-)convergentes es: $[0,1]=1$, $[0,1,1]=\frac{1}{2}$, $[0,1,1,1]=\frac{2}{3}$, $[0,1,1,2]=\frac{3}{5}$, $[0,1,1,3]=\frac{4}{7}$, $[0,1,1,4]=\frac{5}{9}$. Para la escala de $5$ representada por $\mathbb{Z}_B$ el automorfismo que buscamos es $z\mapsto z2_{mod 5}$
 
-| solfeo | z | 2z | 2z mod 5 | solfeo |
-|--------+---+----+----------+--------|
-| fa     | 0 |  0 |        0 | fa     |
-| do     | 1 |  2 |        2 | sol    |
-| sol    | 2 |  4 |        4 | la     |
-| re     | 3 |  6 |        1 | do     |
-| la     | 4 |  8 |        3 | re     |
+| solfeo | $z$ | $2z$ | $2z mod 5$ | solfeo |
+|--------+-----+------+------------+--------|
+| fa     |   0 |    0 |          0 | fa     |
+| do     |   1 |    2 |          2 | sol    |
+| sol    |   2 |    4 |          4 | la     |
+| re     |   3 |    6 |          1 | do     |
+| la     |   4 |    8 |          3 | re     |
 
 y para la escala de 9 tonos tenemos la siguiente tabla:
 
-| solfeo | z | 2z | 2z mod 9 | solfeo |
-|--------+---+----+----------+--------|
-| fa     | 0 |  0 |        0 | fa     |
-| do     | 1 |  2 |        2 | sol    |
-| sol    | 2 |  4 |        4 | la     |
-| re     | 3 |  6 |        6 | si     |
-| la     | 4 |  8 |        8 | bet    |
-| mi     | 5 | 10 |        1 | do     |
-| si     | 6 | 12 |        3 | re     |
-| al     | 7 | 14 |        5 | mi     |
-| bet    | 8 | 16 |        7 | al     |
+| solfeo | $z$ | $2z$ | $2z mod 9$ | solfeo |
+|--------+-----+------+------------+--------|
+| fa     |   0 |    0 |          0 | fa     |
+| do     |   1 |    2 |          2 | sol    |
+| sol    |   2 |    4 |          4 | la     |
+| re     |   3 |    6 |          6 | si     |
+| la     |   4 |    8 |          8 | bet    |
+| mi     |   5 |   10 |          1 | do     |
+| si     |   6 |   12 |          3 | re     |
+| al     |   7 |   14 |          5 | mi     |
+| bet    |   8 |   16 |          7 | al     |
 
 
 en donde /al/ y /bet/ son las primeras sílabas de /alfa/ y /beta/ que usamos aquí para extender el sistema de solfeo normal.
@@ -285,6 +285,47 @@ Ahora podemos usar scale workshop para anotar todas nuestras razones y exportarl
 
 [[/images/sw1.png]]
 
-Ahora lo único que hay que hacer es poner el script en una tab vacía del editor de scripts de Kontakt como se muestra aquí:
+Ahora lo único que hay que hacer es poner el script en una tab vacía del editor de scripts de   Kontakt como se muestra aquí:
 
 [[/images/skw1.gif]]
+
+
+* DONE Pseudoescalas y polytuning :música:
+SCHEDULED: <2022-05-22 Sun>
+:PROPERTIES:
+:EXPORT_FILE_NAME: well-formed-dos
+:export_hugo_custom_front_matter: :series "Escalas bien formadas"
+:END:
+
+En [[https://fullandfaithful.com/posts/well-formed-scales/][la nota anterior]] vimos qué era un sistema de afinación pitagórico generalizado. Para recapitular, toda quinta formal $\mu$ tiene un sistema de afinación asociado. Este sistema de afinación asociado tiene escalas que representamos con los conjuntos $\mathbb{Z}_n$. Nos gustaría, con el fin de crear recursos para componer música con estos sitemas, ver si existe algúna manera matemáticamente significativa de relacionar sistemas de afinación. Mientras que la elección de una quinta formal puede resultar algo arbitrario o trabajo para un estudio psicoacústico, el concepto de una escala bien formada nos da una generalización muy natural. Vamos a ver cuál es.
+
+Primero, podemos observar que dado cualquier sistema de afinación, los datos que constituyen a las escalas bien formadas son:
+
+1. un conjunto de $n$ notas, representado por $\mathbb{Z}_n$
+2. un automorfismo que ordena las notas en orden de escala $\mathbb{Z}_n \to \mathbb{Z}_n$
+
+como recurso musical, podemos perseguir la siguiente generalización: que el automorfismo no sea necesariamente el que ordena a las notas en orden de escala. En otras palabras, podemos debilitar los datos para conseguir /escalas generalizadas/ o /pseudoescalas/ cuyos constituyentes sean:
+
+1. un conjunto de $n$ notas, representado por $\mathbb{Z}_n$
+2. un automorfismo arbitrario $x:\mathbb{Z}_n \to \mathbb{Z}_n$
+
+Es un hecho conocido que el grupo de automorfismos de $Z_n$ es $Aut(Z_n)=\{\sigma_a \mid a \in U(n)\}$ en donde $U(n)$ es el conjunto (el grupo) de los $k \in \mathbb{Z}_n$ tales que el máximo común divisor $mcd(n,k) = 1$. Esto quiere decir que para cada conjunto $\mathbb{Z}_n$ hay tantas escala o pseudoescalas como números primos relativos a $n$. Visualmente, los automorfismos de $Z_n$ son "ordenamientos" de sus elementos. Por ejemplo en este visual las flechas indican el orden de los elementos:
+
+[[/images/Image006.png]]
+
+
+Vista desde esta perspectiva, una escala bien formada es una escala generalizada $(Z_n, x)$ para la cual existe un sistema de afinación $P_{}\mu$ en el que $x$ ordena a $Z_n$ en orden de escala. Se dice, entonces que una pseudoescala $(Z_n, x)$ es bien formada respecto a $\mu$. Utilizando los ejemplos de la nota pasada podemos decir que $(Z_5, 2z)$ es bien formada respecto al sistema de afinación $\mu=\frac{3}{2}$. La escala $(Z_7, 2z)$ es bien formada respecto al mismo sistema.
+
+Hay que notar que, en la nota pasada, en el ejemplo 2, calculamos que $(Z_5,2z)$ también es bien formada en el sistema de $9$ EDO. Esto nos lleva al concepto de polytuning. Dada una pseudoescala $X$, un *sistema de polytuning*, o *sistema de poliafinación* para tal escala, es una colección de sistemas de afinación $\mathcal{A}=\{P_{\mu_1},\ldots,P_{\mu_k}\}$ en donde la escala $X$ es bien formada respecto a cada sistema de afinación $P_{\mu_i}$. Como ejemplo tenemos el sistema de polituning formado por los sistemas pitagórico y de 9 EDO que forman un sistema de polytuning para la escala $(Z_5,2z)$.
+
+*** Escalas de transición
+
+Otro recurso que de inmediato podemos reconocer es el de morfismos entre escalas. Dadas dos escalas como en el diagrama:
+
+[[/images/Image007.png]]
+
+una *(pseudo)escala de transición* es cualquiér automorfismo que haga conmutar el diagrama:
+
+[[/images/Image008.png]]
+
+Por ejemplo, las escalas $A=(Z_7,2z)$ y $B=(Z_7,5z)$, tienen una escala de transición $C = (Z_7,6z)$, puesto que $2( 5^{-1})z=2(3)z_{mod\ 7}=6(z)_{mod\ 7}$.
